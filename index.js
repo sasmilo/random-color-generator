@@ -6,12 +6,16 @@ const color = randomColor({
   hue: process.argv[2],
 });
 
-console.log(chalk.hex(color)('################################'));
-console.log(chalk.hex(color)('################################'));
-console.log(chalk.hex(color)('################################'));
-console.log(chalk.hex(color)('#####                      #####'));
-console.log(chalk.hex(color)('#####       ' + color + '        #####'));
-console.log(chalk.hex(color)('#####                      #####'));
-console.log(chalk.hex(color)('################################'));
-console.log(chalk.hex(color)('################################'));
-console.log(chalk.hex(color)('################################'));
+console.log(
+  chalk.hex(color)(
+    `################################
+################################
+################################
+#####                      #####
+#####       ${color}        #####
+#####                      #####
+################################
+################################
+################################`,
+  ),
+);
